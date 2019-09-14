@@ -10,21 +10,13 @@ public class Main {
 
         System.out.println("Enter a Number to Check if its EVEN or ODD: ");
         int number = new Scanner(System.in).nextInt();
-
-        if(isEven(number) == true){
-            System.out.println("Your Number " + number + " is Even");
-        }
-        else{
-            System.out.println("Your Number " + number + " is ODD");
-        }
-
+        isEven(number);
     }
-
-    public static boolean isEven(int numb){
+    public static void isEven(int numb){
          if(numb % 2 == 0){
-            return true;
+             System.out.println("Your Number " + numb + " is Even");
           }
-         else{ return false;
+         else{ System.out.println("Your Number " + numb + " is ODD");
              }
     }
 
